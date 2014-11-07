@@ -1,0 +1,295 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+
+2013-11-22 02:50:19 --- CRITICAL: Database_Exception [ 1062 ]: Duplicate entry '0' for key 'PRIMARY' [ INSERT INTO `books` (`title`, `description`) VALUES ('Иван-царевич', 'сказка про Ивана царевича и лягушку квакушку') ] ~ MODPATH\database\classes\Kohana\Database\MySQL.php [ 194 ] in Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php:251
+2013-11-22 02:50:19 --- DEBUG: #0 Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php(251): Kohana_Database_MySQL->query(2, 'INSERT INTO `bo...', false, Array)
+#1 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1324): Kohana_Database_Query->execute(Object(Database_MySQL))
+#2 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(1421): Kohana_ORM->create(NULL)
+#3 Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php(54): Kohana_ORM->save()
+#4 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Adminbooks->action_add()
+#5 [internal function]: Kohana_Controller->execute()
+#6 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#7 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#9 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#10 {main} in Z:\home\kohana\www\modules\database\classes\Kohana\Database\Query.php:251
+2013-11-22 03:30:28 --- CRITICAL: Kohana_Exception [ 0 ]: The name property does not exist in the Model_Author class ~ MODPATH\orm\classes\Kohana\ORM.php [ 687 ] in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:603
+2013-11-22 03:30:28 --- DEBUG: #0 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(603): Kohana_ORM->get('name')
+#1 Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php(50): Kohana_ORM->__get('name')
+#2 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Adminbooks->action_add()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#5 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#8 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:603
+2013-11-22 03:32:45 --- CRITICAL: Kohana_Exception [ 0 ]: The name property does not exist in the Model_Author class ~ MODPATH\orm\classes\Kohana\ORM.php [ 687 ] in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:603
+2013-11-22 03:32:45 --- DEBUG: #0 Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php(603): Kohana_ORM->get('name')
+#1 Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php(50): Kohana_ORM->__get('name')
+#2 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Adminbooks->action_add()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#5 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#8 {main} in Z:\home\kohana\www\modules\orm\classes\Kohana\ORM.php:603
+2013-11-22 03:33:41 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: auth ~ APPPATH\views\admin\books\v_add_books.php [ 24 ] in Z:\home\kohana\www\application\views\admin\books\v_add_books.php:24
+2013-11-22 03:33:41 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_add_books.php(24): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 24, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_add_books.php:24
+2013-11-22 03:35:17 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '}', expecting ')' ~ APPPATH\classes\Model\book.php [ 77 ] in file:line
+2013-11-22 03:35:17 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-22 03:35:53 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '*', expecting T_FUNCTION ~ APPPATH\classes\Model\book.php [ 76 ] in file:line
+2013-11-22 03:35:53 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-22 03:37:47 --- CRITICAL: Kohana_Exception [ 0 ]: Method find() cannot be called on loaded objects ~ MODPATH\orm\classes\Kohana\ORM.php [ 966 ] in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:88
+2013-11-22 03:37:47 --- DEBUG: #0 Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php(88): Kohana_ORM->find()
+#1 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Adminbooks->action_edit()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#4 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:88
+2013-11-22 07:11:53 --- CRITICAL: Kohana_Exception [ 0 ]: Method find() cannot be called on loaded objects ~ MODPATH\orm\classes\Kohana\ORM.php [ 966 ] in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:100
+2013-11-22 07:11:53 --- DEBUG: #0 Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php(100): Kohana_ORM->find()
+#1 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Adminbooks->action_edit()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#4 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:100
+2013-11-22 07:30:38 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '$', expecting T_PAAMAYIM_NEKUDOTAYIM ~ APPPATH\classes\Controller\admin\adminbooks.php [ 105 ] in file:line
+2013-11-22 07:30:38 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-22 07:31:01 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '}', expecting T_CATCH ~ APPPATH\classes\Controller\admin\adminbooks.php [ 153 ] in file:line
+2013-11-22 07:31:01 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-22 07:31:33 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '}', expecting T_CATCH ~ APPPATH\classes\Controller\admin\adminbooks.php [ 153 ] in file:line
+2013-11-22 07:31:33 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-22 07:33:35 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: cats ~ APPPATH\views\admin\books\v_add_books.php [ 21 ] in Z:\home\kohana\www\application\views\admin\books\v_add_books.php:21
+2013-11-22 07:33:35 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_add_books.php(21): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 21, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_add_books.php:21
+2013-11-22 07:35:16 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: id ~ APPPATH\views\admin\books\v_edit_books.php [ 10 ] in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:10
+2013-11-22 07:35:16 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_edit_books.php(10): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 10, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:10
+2013-11-22 07:36:33 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: cats ~ APPPATH\views\admin\books\v_edit_books.php [ 20 ] in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:36:33 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_edit_books.php(20): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 20, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:36:34 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: cats ~ APPPATH\views\admin\books\v_edit_books.php [ 20 ] in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:36:34 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_edit_books.php(20): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 20, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:36:36 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: cats ~ APPPATH\views\admin\books\v_edit_books.php [ 20 ] in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:36:36 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_edit_books.php(20): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 20, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:39:34 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: cats ~ APPPATH\views\admin\books\v_edit_books.php [ 20 ] in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:39:34 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_edit_books.php(20): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 20, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:39:41 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: cats ~ APPPATH\views\admin\books\v_edit_books.php [ 20 ] in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:39:41 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_edit_books.php(20): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 20, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:41:34 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: cats ~ APPPATH\views\admin\books\v_edit_books.php [ 20 ] in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:41:34 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_edit_books.php(20): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 20, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:20
+2013-11-22 07:42:27 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected T_OBJECT_OPERATOR ~ APPPATH\classes\Controller\admin\adminbooks.php [ 157 ] in file:line
+2013-11-22 07:42:27 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-22 07:42:39 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: autr ~ APPPATH\views\admin\books\v_edit_books.php [ 23 ] in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:23
+2013-11-22 07:42:39 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_edit_books.php(23): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 23, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:23
+2013-11-22 07:47:17 --- CRITICAL: Kohana_Exception [ 0 ]: Cannot delete book model because it is not loaded. ~ MODPATH\orm\classes\Kohana\ORM.php [ 1434 ] in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:170
+2013-11-22 07:47:17 --- DEBUG: #0 Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php(170): Kohana_ORM->delete()
+#1 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Adminbooks->action_delete()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#4 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:170
+2013-11-22 08:00:18 --- CRITICAL: Kohana_Exception [ 0 ]: Cannot delete book model because it is not loaded. ~ MODPATH\orm\classes\Kohana\ORM.php [ 1434 ] in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:170
+2013-11-22 08:00:18 --- DEBUG: #0 Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php(170): Kohana_ORM->delete()
+#1 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Adminbooks->action_delete()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#4 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:170
+2013-11-22 08:00:38 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Request::redirect() ~ APPPATH\classes\Controller\admin\adminbooks.php [ 172 ] in file:line
+2013-11-22 08:00:38 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-22 08:32:43 --- CRITICAL: ErrorException [ 8 ]: Undefined index: title ~ APPPATH\views\admin\books\v_edit_books.php [ 14 ] in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:14
+2013-11-22 08:32:43 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_edit_books.php(14): Kohana_Core::error_handler(8, 'Undefined index...', 'Z:\home\kohana\...', 14, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_edit_books.php:14
+2013-11-22 08:34:49 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected T_DOUBLE_ARROW ~ APPPATH\classes\Controller\admin\adminbooks.php [ 134 ] in file:line
+2013-11-22 08:34:49 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-22 08:37:26 --- CRITICAL: Kohana_Exception [ 0 ]: Cannot delete book model because it is not loaded. ~ MODPATH\orm\classes\Kohana\ORM.php [ 1434 ] in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:175
+2013-11-22 08:37:26 --- DEBUG: #0 Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php(175): Kohana_ORM->delete()
+#1 Z:\home\kohana\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Adminbooks->action_delete()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#4 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\kohana\www\application\classes\Controller\admin\adminbooks.php:175
+2013-11-22 09:46:28 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: cats ~ APPPATH\views\admin\books\v_add_books.php [ 21 ] in Z:\home\kohana\www\application\views\admin\books\v_add_books.php:21
+2013-11-22 09:46:28 --- DEBUG: #0 Z:\home\kohana\www\application\views\admin\books\v_add_books.php(21): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\kohana\...', 21, Array)
+#1 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#2 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#3 Z:\home\kohana\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\kohana\www\application\views\admin\v_base.php(6): Kohana_View->__toString()
+#5 Z:\home\kohana\www\system\classes\Kohana\View.php(61): include('Z:\home\kohana\...')
+#6 Z:\home\kohana\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\kohana\...', Array)
+#7 Z:\home\kohana\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#8 Z:\home\kohana\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 Z:\home\kohana\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Adminbooks))
+#11 Z:\home\kohana\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 Z:\home\kohana\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#13 Z:\home\kohana\www\index.php(118): Kohana_Request->execute()
+#14 {main} in Z:\home\kohana\www\application\views\admin\books\v_add_books.php:21
