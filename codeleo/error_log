@@ -1,0 +1,67 @@
+[29-Dec-2014 18:47:00 UTC] PHP Parse error:  syntax error, unexpected 'default' (T_DEFAULT) in /home/juliajune/public_html/portfolio/codeleo/application/config/database.php on line 52
+[05-Jan-2015 14:38:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 92
+[05-Jan-2015 14:40:18 UTC] PHP Fatal error:  Call to a member function index_page() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 17
+[05-Jan-2015 14:43:17 UTC] PHP Fatal error:  Class 'Users_model' not found in /home/juliajune/public_html/portfolio/codeleo/system/core/Loader.php on line 303
+[06-Jan-2015 14:23:09 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 14
+[06-Jan-2015 14:23:46 UTC] PHP Fatal error:  Class 'Users_model' not found in /home/juliajune/public_html/portfolio/codeleo/system/core/Loader.php on line 303
+[08-Jan-2015 08:59:26 UTC] PHP Fatal error:  Class 'Users_model' not found in /home/juliajune/public_html/portfolio/codeleo/system/core/Loader.php on line 303
+[08-Jan-2015 09:32:30 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::num_rows() in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 13
+[08-Jan-2015 09:32:34 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::num_rows() in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 13
+[08-Jan-2015 10:05:26 UTC] PHP Fatal error:  Cannot break/continue 1 level in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 62
+[08-Jan-2015 10:45:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/juliajune/public_html/portfolio/codeleo/application/views/index/templates/header_view.php on line 77
+[08-Jan-2015 12:44:04 UTC] PHP Parse error:  syntax error, unexpected ''users_mo' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 9
+[08-Jan-2015 13:52:28 UTC] PHP Fatal error:  Cannot access empty property in /home/juliajune/public_html/portfolio/codeleo/system/core/Model.php on line 51
+[08-Jan-2015 13:52:50 UTC] PHP Fatal error:  Cannot access empty property in /home/juliajune/public_html/portfolio/codeleo/system/core/Model.php on line 51
+[08-Jan-2015 13:54:17 UTC] PHP Fatal error:  Cannot access empty property in /home/juliajune/public_html/portfolio/codeleo/system/core/Model.php on line 51
+[08-Jan-2015 16:37:14 UTC] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 117
+[09-Jan-2015 07:26:26 UTC] PHP Fatal error:  Cannot access empty property in /home/juliajune/public_html/portfolio/codeleo/system/core/Model.php on line 51
+[09-Jan-2015 07:26:26 UTC] PHP Fatal error:  Cannot access empty property in /home/juliajune/public_html/portfolio/codeleo/system/core/Model.php on line 51
+[09-Jan-2015 07:31:52 UTC] PHP Fatal error:  Cannot access empty property in /home/juliajune/public_html/portfolio/codeleo/system/core/Model.php on line 51
+[09-Jan-2015 09:50:13 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 113
+[09-Jan-2015 09:50:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 136
+[09-Jan-2015 09:50:34 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 136
+[09-Jan-2015 09:50:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 136
+[09-Jan-2015 10:18:57 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 103
+[09-Jan-2015 10:20:32 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 103
+[09-Jan-2015 10:20:58 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 103
+[09-Jan-2015 10:21:31 UTC] PHP Parse error:  syntax error, unexpected ''co' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 83
+[09-Jan-2015 10:21:48 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 103
+[09-Jan-2015 10:21:58 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 107
+[09-Jan-2015 10:21:59 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 107
+[09-Jan-2015 10:42:03 UTC] PHP Parse error:  syntax error, unexpected ''users_mo' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 9
+[09-Jan-2015 10:51:44 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 86
+[09-Jan-2015 11:38:47 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 135
+[09-Jan-2015 11:55:13 UTC] PHP Parse error:  syntax error, unexpected ''user' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 10
+[09-Jan-2015 12:03:03 UTC] PHP Parse error:  syntax error, unexpected ''user' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 10
+[09-Jan-2015 17:34:41 UTC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE), expecting '(' in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 68
+[09-Jan-2015 17:57:04 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::num_rows() in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 76
+[09-Jan-2015 19:09:57 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 61
+[09-Jan-2015 19:10:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 61
+[09-Jan-2015 19:10:25 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 61
+[09-Jan-2015 19:10:31 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 61
+[09-Jan-2015 19:12:18 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 62
+[09-Jan-2015 19:12:36 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 62
+[09-Jan-2015 19:23:39 UTC] PHP Fatal error:  Class 'Users_model' not found in /home/juliajune/public_html/portfolio/codeleo/system/core/Loader.php on line 303
+[09-Jan-2015 19:25:47 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 161
+[09-Jan-2015 19:33:59 UTC] PHP Fatal error:  Class 'Users_model' not found in /home/juliajune/public_html/portfolio/codeleo/system/core/Loader.php on line 303
+[09-Jan-2015 19:36:54 UTC] PHP Parse error:  syntax error, unexpected ''user' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/users.php on line 10
+[09-Jan-2015 19:42:31 UTC] PHP Fatal error:  Call to a member function count_all_results() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 99
+[10-Jan-2015 06:23:20 UTC] PHP Fatal error:  Call to a member function count_all_results() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 111
+[10-Jan-2015 06:23:24 UTC] PHP Fatal error:  Call to a member function count_all_results() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 111
+[10-Jan-2015 06:25:21 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 126
+[10-Jan-2015 06:26:16 UTC] PHP Fatal error:  Call to a member function count_all_results() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 84
+[10-Jan-2015 06:26:49 UTC] PHP Fatal error:  Call to a member function count_all_results() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 84
+[10-Jan-2015 06:27:34 UTC] PHP Fatal error:  Call to undefined method CI_DB_mysql_result::count_all_results() in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 84
+[10-Jan-2015 15:09:19 UTC] PHP Fatal error:  Cannot use object of type CI_DB_mysql_driver as array in /home/juliajune/public_html/portfolio/codeleo/application/models/users_model.php on line 70
+[12-Jan-2015 14:56:06 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 205
+[12-Jan-2015 15:18:49 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 205
+[12-Jan-2015 15:18:55 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 205
+[12-Jan-2015 15:23:26 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 205
+[12-Jan-2015 15:23:30 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 205
+[12-Jan-2015 15:23:41 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 205
+[12-Jan-2015 15:23:44 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 205
+[12-Jan-2015 15:23:47 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 205
+[12-Jan-2015 15:27:35 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 205
+[12-Jan-2015 15:28:33 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 199
+[12-Jan-2015 15:31:06 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 199
+[12-Jan-2015 15:31:55 UTC] PHP Fatal error:  Call to a member function edit_foto() on a non-object in /home/juliajune/public_html/portfolio/codeleo/application/controllers/admin/posts.php on line 199
